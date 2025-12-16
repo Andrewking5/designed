@@ -7,8 +7,10 @@ import Services from './pages/Services'
 import Contact from './pages/Contact'
 
 function App() {
+  // Vercel 部署時不需要 base path，GitHub Pages 需要
+  // 直接使用 import.meta.BASE_URL（Vite 提供的）
   return (
-    <Router basename={import.meta.env.BASE_URL}>
+    <Router basename={import.meta.BASE_URL}>
       <Layout>
         <Routes>
           <Route path="/" element={<Home />} />

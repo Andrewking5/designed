@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { Award, GraduationCap, Briefcase, Heart, Target, Lightbulb } from 'lucide-react'
+import { Heart, Target, Lightbulb } from 'lucide-react'
 
 const timeline = [
   {

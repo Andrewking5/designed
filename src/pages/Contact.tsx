@@ -132,7 +132,7 @@ export default function Contact() {
                 社群媒體
               </h3>
               <div className="flex space-x-4">
-                {['Instagram', 'Facebook', 'LinkedIn'].map((social, index) => (
+                {['Instagram', 'Facebook', 'LinkedIn'].map((social) => (
                   <motion.a
                     key={social}
                     href="#"
