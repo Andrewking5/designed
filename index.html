@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>室內設計作品集 | Interior Design Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <script>
+      // GitHub Pages SPA 路由支援
+      // 處理 404.html 重定向的路由
+      (function() {
+        var path = window.location.pathname;
+        var search = window.location.search;
+        var hash = window.location.hash;
+        
+        // 檢查是否是 GitHub Pages 重定向格式 (/?/path)
+        if (search.indexOf('?/') !== -1) {
+          var segments = search.split('?/');
+          if (segments.length > 1) {
+            var newPath = segments[1].split('&')[0].replace(/~and~/g, '&');
+            var newSearch = segments[1].split('&').slice(1).join('&').replace(/~and~/g, '&');
+            var redirectPath = '/' + newPath + (newSearch ? '?' + newSearch : '') + hash;
+            window.history.replaceState({}, '', redirectPath);
+          }
+        }
+      })();
+    </script>
+  </body>
+</html>
+
