@@ -5,8 +5,8 @@ export default function Footer() {
   const socialLinks = [
     { icon: Instagram, href: '#', label: 'Instagram' },
     { icon: Facebook, href: '#', label: 'Facebook' },
-    { icon: Mail, href: 'mailto:contact@designstudio.com', label: 'Email' },
-    { icon: Phone, href: 'tel:+886912345678', label: 'Phone' },
+    { icon: Mail, href: 'mailto:jmsl.tw@icloud.com', label: 'Email' },
+    { icon: Phone, href: 'tel:0937121085', label: 'Phone' },
   ]
 
   return (

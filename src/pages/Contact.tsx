@@ -23,13 +23,13 @@ export default function Contact() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setIsSubmitting(true)
-    
+
     // Simulate form submission
     await new Promise(resolve => setTimeout(resolve, 1500))
-    
+
     setIsSubmitting(false)
     setIsSubmitted(true)
-    
+
     // Reset form after 3 seconds
     setTimeout(() => {
       setIsSubmitted(false)
@@ -47,19 +47,25 @@ export default function Contact() {
     {
       icon: Mail,
       label: 'Email',
-      value: 'contact@designstudio.com',
-      href: 'mailto:contact@designstudio.com',
+      value: 'jmsl.tw@icloud.com',
+      href: 'mailto:jmsl.tw@icloud.com',
     },
     {
       icon: Phone,
-      label: '電話',
-      value: '+886 912 345 678',
-      href: 'tel:+886912345678',
+      label: '市話',
+      value: '(02)8866-2275',
+      href: 'tel:0288662275',
+    },
+    {
+      icon: Phone,
+      label: '手機',
+      value: '0937-121-085',
+      href: 'tel:0937121085',
     },
     {
       icon: MapPin,
       label: '地址',
-      value: '台北市信義區設計街123號',
+      value: '台北市',
       href: '#',
     },
   ]
