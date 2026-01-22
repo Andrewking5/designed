@@ -106,6 +106,124 @@ export default function Services() {
           })}
         </div>
 
+        {/* Exclusive Package Section */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="bg-white rounded-3xl p-8 md:p-12 shadow-xl border border-primary-100 mb-20 relative overflow-hidden"
+        >
+          <div className="absolute top-0 right-0 w-64 h-64 bg-accent-50 rounded-bl-full -z-0 opacity-50" />
+
+          <div className="relative z-10">
+            <div className="text-center mb-12">
+              <span className="inline-block px-4 py-2 bg-accent-100 text-accent-700 rounded-full font-semibold text-sm mb-4">
+                熱門投資首選
+              </span>
+              <h2 className="text-3xl md:text-4xl font-serif font-bold text-primary-900 mb-4">
+                包租公 38 萬專案 - 單一房間標準報價
+              </h2>
+              <p className="text-lg text-primary-600 max-w-3xl mx-auto">
+                專為房東量身打造的高 CP 值統包方案，包含水電、木工、地磚到門禁系統，
+                一站式解決所有裝修需求，快速打造優質出租套房。
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8">
+              <div>
+                <h3 className="text-xl font-bold text-primary-900 mb-4 flex items-center">
+                  <span className="w-8 h-8 bg-primary-100 rounded-full flex items-center justify-center text-primary-700 mr-3 text-sm">01</span>
+                  水電與衛浴設備
+                </h3>
+                <ul className="space-y-3 mb-8 text-primary-700">
+                  <li className="flex items-start">
+                    <Check className="w-5 h-5 text-accent-600 mr-2 mt-0.5 flex-shrink-0" />
+                    <span><strong>衛浴全套</strong>：凱撒馬桶、洗手台、蓮蓬頭、除霧鏡、排風機等</span>
+                  </li>
+                  <li className="flex items-start">
+                    <Check className="w-5 h-5 text-accent-600 mr-2 mt-0.5 flex-shrink-0" />
+                    <span><strong>安全配線</strong>：110V 太平洋 2.0 電線 / 220V 太平洋 5.5 電線</span>
+                  </li>
+                  <li className="flex items-start">
+                    <Check className="w-5 h-5 text-accent-600 mr-2 mt-0.5 flex-shrink-0" />
+                    <span><strong>照明規劃</strong>：房間崁燈 6-8 組、浴室崁燈 2 組或主燈</span>
+                  </li>
+                  <li className="flex items-start">
+                    <Check className="w-5 h-5 text-accent-600 mr-2 mt-0.5 flex-shrink-0" />
+                    <span><strong>獨立熱水</strong>：每間配置獨立鴻茂 12 加侖電熱水器</span>
+                  </li>
+                </ul>
+
+                <h3 className="text-xl font-bold text-primary-900 mb-4 flex items-center">
+                  <span className="w-8 h-8 bg-primary-100 rounded-full flex items-center justify-center text-primary-700 mr-3 text-sm">02</span>
+                  泥作與隔間工程
+                </h3>
+                <ul className="space-y-3 mb-8 text-primary-700">
+                  <li className="flex items-start">
+                    <Check className="w-5 h-5 text-accent-600 mr-2 mt-0.5 flex-shrink-0" />
+                    <span><strong>隔音隔間</strong>：採用工法繁瑣但隔音最佳的<strong>紅磚隔間</strong></span>
+                  </li>
+                  <li className="flex items-start">
+                    <Check className="w-5 h-5 text-accent-600 mr-2 mt-0.5 flex-shrink-0" />
+                    <span><strong>優質門扇</strong>：高成本隔音硫化銅門、白底彩繪浴室門</span>
+                  </li>
+                  <li className="flex items-start">
+                    <Check className="w-5 h-5 text-accent-600 mr-2 mt-0.5 flex-shrink-0" />
+                    <span><strong>專業防水</strong>：浴室高度 120cm 以下彈性泥作防水 (保固3年)</span>
+                  </li>
+                  <li className="flex items-start">
+                    <Check className="w-5 h-5 text-accent-600 mr-2 mt-0.5 flex-shrink-0" />
+                    <span><strong>地磚鋪設</strong>：採用 60x60cm 進口拋光石英磚</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div>
+                <h3 className="text-xl font-bold text-primary-900 mb-4 flex items-center">
+                  <span className="w-8 h-8 bg-primary-100 rounded-full flex items-center justify-center text-primary-700 mr-3 text-sm">03</span>
+                  木工與天花板
+                </h3>
+                <ul className="space-y-3 mb-8 text-primary-700">
+                  <li className="flex items-start">
+                    <Check className="w-5 h-5 text-accent-600 mr-2 mt-0.5 flex-shrink-0" />
+                    <span><strong>防火天花板</strong>：輕鋼架搭配矽酸鈣板 (防火耐燃一級)</span>
+                  </li>
+                </ul>
+
+                <h3 className="text-xl font-bold text-primary-900 mb-4 flex items-center">
+                  <span className="w-8 h-8 bg-primary-100 rounded-full flex items-center justify-center text-primary-700 mr-3 text-sm">04</span>
+                  智能門禁與網路
+                </h3>
+                <ul className="space-y-3 mb-8 text-primary-700">
+                  <li className="flex items-start">
+                    <Check className="w-5 h-5 text-accent-600 mr-2 mt-0.5 flex-shrink-0" />
+                    <span><strong>Mifare 門禁</strong>：與悠遊卡同級刷卡系統，附 20 個磁扣</span>
+                  </li>
+                  <li className="flex items-start">
+                    <Check className="w-5 h-5 text-accent-600 mr-2 mt-0.5 flex-shrink-0" />
+                    <span><strong>網路設備</strong>：搭配 IP 分享器，滿足筆電與桌機與無線上網需求</span>
+                  </li>
+                </ul>
+
+                <div className="bg-primary-50 rounded-xl p-6 border border-primary-100">
+                  <h4 className="font-bold text-primary-900 mb-3">加值服務與升級選項</h4>
+                  <ul className="text-sm space-y-2 text-primary-700">
+                    <li>• 板岩/馬賽克磁磚升級：單房間 $13,000 (30x60cm / 30x30cm)</li>
+                    <li>• 樓層搬運費：每增加一層樓單房間 +$2,000 (有電梯 +$500)</li>
+                    <li>• 陽台外推拆除搬運：單戶 $20,000</li>
+                    <li>• 大門更換：硫化銅門 $9,000 / 白鐵門 $30,000 / 雙玄關門 $40,000</li>
+                    <li>• 全室彈性水泥防水 (25坪內)：$25,000</li>
+                    <li className="text-accent-600 font-semibold mt-2 pt-2 border-t border-primary-200">
+                      ★ 完工後提供一年完整保固
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </motion.div>
+
         {/* Process Section */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}

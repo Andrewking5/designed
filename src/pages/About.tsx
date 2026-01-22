@@ -3,27 +3,33 @@ import { Heart, Target, Lightbulb, Users, Award, TrendingUp } from 'lucide-react
 
 const timeline = [
   {
-    year: '2005',
+    year: '2000',
     title: '公司成立',
-    description: '紅圖室內設計成立，專注於提供高品質的室內設計服務',
+    description: '紅圖室內設計成立，經濟部申請立案，資本額500萬元',
     company: '紅圖室內設計',
   },
   {
+    year: '2005',
+    title: '專注套房規劃',
+    description: '開始專注於套房隔間規劃，累積豐富的實務經驗',
+    company: '',
+  },
+  {
     year: '2010',
-    title: '業務拓展',
-    description: '擴展商業空間與套房規劃業務，服務範圍更加多元化',
+    title: '代租代管服務',
+    description: '擴展一條龍服務，提供代租代管專業服務',
     company: '',
   },
   {
     year: '2015',
-    title: '3D 設計導入',
-    description: '引進專業 3D 渲染技術，讓客戶提前預見完工效果',
+    title: '合法申請專家',
+    description: '成為套房合法申請專家，協助客戶符合建築管理法規',
     company: '',
   },
   {
     year: '2024',
-    title: '持續創新',
-    description: '累積超過百件作品，服務遍及台北、新北、台中及廈門',
+    title: '傲人成績',
+    description: '20餘年經驗，規劃超過1000間套房，成功幫助上百名房東提高收租報酬',
     company: '',
   },
 ]
@@ -85,8 +91,8 @@ export default function About() {
             關於我們
           </h1>
           <p className="text-lg text-primary-600 max-w-3xl mx-auto leading-relaxed">
-            紅圖室內設計擁有超過 15 年的專業經驗，專注於創造既美觀又實用的生活空間。
-            每個專案都是獨一無二的創作，我們用心傾聽客戶需求，將夢想轉化為現實。
+            紅圖室內設計經濟部申請立案，公司資本額500萬元，從事室內裝潢、套房規劃二十餘年經驗。<br />
+            規劃過的套房超過1000間，成功幫助上百名房東將房屋提高收租報酬。
           </p>
         </motion.div>
 
@@ -109,37 +115,37 @@ export default function About() {
                   紅圖團隊致力於在美學與實用性之間找到完美平衡，讓每個設計都能真正改善居住者的生活品質。
                 </p>
                 <p className="text-primary-700 leading-relaxed">
-                  從現代簡約到經典優雅，從住宅設計到商業空間，我們擅長各種風格與類型。
-                  無論是新屋裝潢、舊屋翻新，還是套房投資規劃，我們都能根據客戶的需求，
-                  量身打造專屬的設計方案。
+                  面對裝修時可能遇到的問題經驗豐富，尤其是建築管理法規對於套房隔間的規範日趨嚴謹。
+                  許多一般裝潢業者或設計師都沒辦法給您最新最正確的資訊，我們能協助您<strong>合法申請</strong>，
+                  讓您不用因為合法性而擔心。
                 </p>
                 <p className="text-primary-700 leading-relaxed">
-                  我們提供完整的 3D 設計圖，讓客戶在施工前就能清楚看到完工後的效果，
-                  確保每個細節都符合期望。專業的施工團隊與嚴格的品質管控，
-                  是我們對客戶的承諾。
+                  我們不只是為您做<strong>空間規劃</strong>，更是為您做<strong>財務規劃</strong>，
+                  讓房屋在合法的條件下為您創造最大的租金收益，並由專業的仲介團隊為您尋找下一間收租金雞母。
                 </p>
               </div>
 
               <div className="space-y-6">
                 <h3 className="text-2xl font-serif font-bold text-primary-900">
-                  服務範疇
+                  我們的特色
                 </h3>
                 <div className="space-y-4">
                   <div className="bg-white p-4 rounded-xl shadow-sm">
-                    <h4 className="font-semibold text-primary-900 mb-2">住宅設計</h4>
-                    <p className="text-sm text-primary-600">新成屋裝潢、舊屋翻新、別墅豪宅</p>
+                    <h4 className="font-semibold text-primary-900 mb-2">① 完整一條龍的服務</h4>
+                    <ul className="text-sm text-primary-600 space-y-1 ml-4">
+                      <li>• <strong>規劃</strong>：針對您的需求，給您專業的建議，讓您不只擁有高租金收入更能符合法令的規定</li>
+                      <li>• <strong>簽約</strong>：品質有保障，無額外收費；工程不拖延，收費照合約</li>
+                      <li>• <strong>合法申請</strong>：為您合法申請裝修執照，提高房屋價值</li>
+                      <li>• <strong>施工</strong>：自有工班，套房施工經驗豐富，工程完工後續有完善的保固</li>
+                      <li>• <strong>代租</strong>：免費為業主尋找優質房客，多年經驗幫您過濾掉爛房客</li>
+                      <li>• <strong>代管</strong>：忙碌的您，出租後可委由專業團隊代您管理房屋的大小事，讓您輕鬆收租沒煩惱</li>
+                    </ul>
                   </div>
                   <div className="bg-white p-4 rounded-xl shadow-sm">
-                    <h4 className="font-semibold text-primary-900 mb-2">商業空間</h4>
-                    <p className="text-sm text-primary-600">辦公室、店面、展示空間設計</p>
-                  </div>
-                  <div className="bg-white p-4 rounded-xl shadow-sm">
-                    <h4 className="font-semibold text-primary-900 mb-2">套房規劃</h4>
-                    <p className="text-sm text-primary-600">包租公專案、投資型套房規劃</p>
-                  </div>
-                  <div className="bg-white p-4 rounded-xl shadow-sm">
-                    <h4 className="font-semibold text-primary-900 mb-2">3D 設計服務</h4>
-                    <p className="text-sm text-primary-600">專業渲染圖、施工前視覺化呈現</p>
+                    <h4 className="font-semibold text-primary-900 mb-2">② 創造價值</h4>
+                    <p className="text-sm text-primary-600">
+                      我們不只是為您做空間規劃，更是為您做財務規劃，讓房屋在合法的條件下為您創造最大的租金收益，並由專業的仲介團隊為您尋找下一間收租金雞母。
+                    </p>
                   </div>
                 </div>
               </div>
@@ -147,20 +153,20 @@ export default function About() {
 
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-8 pt-8 border-t border-primary-200">
               <div className="bg-white/80 p-4 rounded-xl text-center">
+                <div className="text-3xl font-bold text-accent-600 mb-1">1000+</div>
+                <div className="text-sm text-primary-600">規劃套房</div>
+              </div>
+              <div className="bg-white/80 p-4 rounded-xl text-center">
                 <div className="text-3xl font-bold text-accent-600 mb-1">100+</div>
-                <div className="text-sm text-primary-600">完成專案</div>
+                <div className="text-sm text-primary-600">成功房東</div>
               </div>
               <div className="bg-white/80 p-4 rounded-xl text-center">
-                <div className="text-3xl font-bold text-accent-600 mb-1">200+</div>
-                <div className="text-sm text-primary-600">滿意客戶</div>
-              </div>
-              <div className="bg-white/80 p-4 rounded-xl text-center">
-                <div className="text-3xl font-bold text-accent-600 mb-1">15+</div>
+                <div className="text-3xl font-bold text-accent-600 mb-1">20+</div>
                 <div className="text-sm text-primary-600">年經驗</div>
               </div>
               <div className="bg-white/80 p-4 rounded-xl text-center">
-                <div className="text-3xl font-bold text-accent-600 mb-1">4</div>
-                <div className="text-sm text-primary-600">服務城市</div>
+                <div className="text-3xl font-bold text-accent-600 mb-1">500萬</div>
+                <div className="text-sm text-primary-600">資本額</div>
               </div>
             </div>
           </motion.div>
