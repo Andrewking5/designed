@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import { Link } from 'react-router-dom'
 import { Instagram, Facebook, Mail, Phone } from 'lucide-react'
 
 export default function Footer() {
@@ -36,24 +37,24 @@ export default function Footer() {
             <h4 className="text-lg font-semibold mb-4">快速連結</h4>
             <ul className="space-y-2 text-sm">
               <li>
-                <a href="/portfolio" className="text-primary-300 hover:text-accent-400 transition-colors">
+                <Link to="/portfolio" className="text-primary-300 hover:text-accent-400 transition-colors">
                   作品集
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/about" className="text-primary-300 hover:text-accent-400 transition-colors">
+                <Link to="/about" className="text-primary-300 hover:text-accent-400 transition-colors">
                   關於我們
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/services" className="text-primary-300 hover:text-accent-400 transition-colors">
+                <Link to="/services" className="text-primary-300 hover:text-accent-400 transition-colors">
                   服務項目
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/contact" className="text-primary-300 hover:text-accent-400 transition-colors">
+                <Link to="/contact" className="text-primary-300 hover:text-accent-400 transition-colors">
                   聯絡我們
-                </a>
+                </Link>
               </li>
             </ul>
           </motion.div>
