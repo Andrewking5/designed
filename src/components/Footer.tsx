@@ -20,7 +20,7 @@ export default function Footer() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h3 className="text-2xl font-serif font-bold mb-4">Design Studio</h3>
+            <h3 className="text-2xl font-serif font-bold mb-4">紅圖室內設計</h3>
             <p className="text-primary-300 text-sm leading-relaxed">
               專業的室內設計服務，為您打造理想的生活空間。
             </p>
@@ -42,7 +42,7 @@ export default function Footer() {
               </li>
               <li>
                 <a href="/about" className="text-primary-300 hover:text-accent-400 transition-colors">
-                  關於我
+                  關於我們
                 </a>
               </li>
               <li>
@@ -52,7 +52,7 @@ export default function Footer() {
               </li>
               <li>
                 <a href="/contact" className="text-primary-300 hover:text-accent-400 transition-colors">
-                  聯絡我
+                  聯絡我們
                 </a>
               </li>
             </ul>
@@ -90,7 +90,7 @@ export default function Footer() {
           transition={{ duration: 0.6, delay: 0.3 }}
           className="mt-8 pt-8 border-t border-primary-800 text-center text-sm text-primary-400"
         >
-          <p>&copy; {new Date().getFullYear()} Design Studio. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} 紅圖室內設計. All rights reserved.</p>
         </motion.div>
       </div>
     </footer>

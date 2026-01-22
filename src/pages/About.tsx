@@ -1,29 +1,29 @@
 import { motion } from 'framer-motion'
-import { Heart, Target, Lightbulb } from 'lucide-react'
+import { Heart, Target, Lightbulb, Users, Award, TrendingUp } from 'lucide-react'
 
 const timeline = [
   {
-    year: '2014',
-    title: '開始設計生涯',
-    description: '畢業於室內設計系，開始從事室內設計工作',
-    company: '知名設計公司',
+    year: '2005',
+    title: '公司成立',
+    description: '紅圖室內設計成立，專注於提供高品質的室內設計服務',
+    company: '紅圖室內設計',
   },
   {
-    year: '2017',
-    title: '獨立設計師',
-    description: '成立個人設計工作室，專注於住宅與商業空間設計',
-    company: 'Design Studio',
+    year: '2010',
+    title: '業務拓展',
+    description: '擴展商業空間與套房規劃業務，服務範圍更加多元化',
+    company: '',
   },
   {
-    year: '2020',
-    title: '獲獎肯定',
-    description: '獲得台灣室內設計大獎最佳住宅設計獎',
+    year: '2015',
+    title: '3D 設計導入',
+    description: '引進專業 3D 渲染技術，讓客戶提前預見完工效果',
     company: '',
   },
   {
     year: '2024',
-    title: '持續成長',
-    description: '持續精進設計技能，完成超過50個專案',
+    title: '持續創新',
+    description: '累積超過百件作品，服務遍及台北、新北、台中及廈門',
     company: '',
   },
 ]
@@ -44,14 +44,30 @@ const values = [
     title: '創新思維',
     description: '結合傳統與現代，創造獨特的設計風格',
   },
+  {
+    icon: Users,
+    title: '專業團隊',
+    description: '經驗豐富的設計與施工團隊，確保品質與效率',
+  },
+  {
+    icon: Award,
+    title: '品質保證',
+    description: '嚴選建材與工法，提供長期售後服務保障',
+  },
+  {
+    icon: TrendingUp,
+    title: '持續進步',
+    description: '不斷學習最新設計趨勢與技術，追求卓越',
+  },
 ]
 
 const skills = [
   { name: '空間規劃', level: 95 },
-  { name: '風格設計', level: 90 },
-  { name: '3D 建模', level: 85 },
+  { name: '風格設計', level: 92 },
+  { name: '3D 建模渲染', level: 90 },
   { name: '材料選配', level: 88 },
-  { name: '工程管理', level: 82 },
+  { name: '工程管理', level: 93 },
+  { name: '套房投資規劃', level: 85 },
 ]
 
 export default function About() {
@@ -66,72 +82,85 @@ export default function About() {
           className="text-center mb-16"
         >
           <h1 className="text-5xl md:text-6xl font-serif font-bold text-primary-900 mb-6">
-            關於我
+            關於我們
           </h1>
           <p className="text-lg text-primary-600 max-w-3xl mx-auto leading-relaxed">
-            擁有超過十年的室內設計經驗，專注於創造既美觀又實用的生活空間。
+            紅圖室內設計擁有超過 15 年的專業經驗，專注於創造既美觀又實用的生活空間。
             每個專案都是獨一無二的創作，我們用心傾聽客戶需求，將夢想轉化為現實。
           </p>
         </motion.div>
 
-        {/* Profile Section */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-20">
+        {/* Company Overview - 移除個人照片，改為公司介紹 */}
+        <div className="mb-20">
           <motion.div
-            initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="relative"
+            className="bg-gradient-to-br from-white to-primary-50 rounded-2xl p-8 md:p-12 shadow-lg"
           >
-            <div className="relative rounded-2xl overflow-hidden">
-              <motion.img
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800"
-                alt="Designer"
-                className="w-full h-full object-cover"
-                whileHover={{ scale: 1.05 }}
-                transition={{ duration: 0.5 }}
-              />
-            </div>
-          </motion.div>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+              <div className="space-y-6">
+                <h2 className="text-3xl font-serif font-bold text-primary-900 mb-4">
+                  設計理念
+                </h2>
+                <p className="text-primary-700 leading-relaxed">
+                  我們相信每個空間都有其獨特的靈魂，設計不只是美化環境，更是創造生活的方式。
+                  紅圖團隊致力於在美學與實用性之間找到完美平衡，讓每個設計都能真正改善居住者的生活品質。
+                </p>
+                <p className="text-primary-700 leading-relaxed">
+                  從現代簡約到經典優雅，從住宅設計到商業空間，我們擅長各種風格與類型。
+                  無論是新屋裝潢、舊屋翻新，還是套房投資規劃，我們都能根據客戶的需求，
+                  量身打造專屬的設計方案。
+                </p>
+                <p className="text-primary-700 leading-relaxed">
+                  我們提供完整的 3D 設計圖，讓客戶在施工前就能清楚看到完工後的效果，
+                  確保每個細節都符合期望。專業的施工團隊與嚴格的品質管控，
+                  是我們對客戶的承諾。
+                </p>
+              </div>
 
-          <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-            className="space-y-6"
-          >
-            <div>
-              <h2 className="text-3xl font-serif font-bold text-primary-900 mb-4">
-                設計理念
-              </h2>
-              <p className="text-primary-700 leading-relaxed mb-4">
-                我相信每個空間都有其獨特的靈魂，設計不只是美化環境，更是創造生活的方式。
-                我致力於在美學與實用性之間找到完美平衡，讓每個設計都能真正改善居住者的生活品質。
-              </p>
-              <p className="text-primary-700 leading-relaxed">
-                從現代簡約到經典優雅，我擅長各種風格，並能根據客戶的個性與需求，
-                量身打造專屬的設計方案。每個專案都是與客戶共同創作的過程，
-                透過深入的溝通與理解，將夢想轉化為觸手可及的現實。
-              </p>
+              <div className="space-y-6">
+                <h3 className="text-2xl font-serif font-bold text-primary-900">
+                  服務範疇
+                </h3>
+                <div className="space-y-4">
+                  <div className="bg-white p-4 rounded-xl shadow-sm">
+                    <h4 className="font-semibold text-primary-900 mb-2">住宅設計</h4>
+                    <p className="text-sm text-primary-600">新成屋裝潢、舊屋翻新、別墅豪宅</p>
+                  </div>
+                  <div className="bg-white p-4 rounded-xl shadow-sm">
+                    <h4 className="font-semibold text-primary-900 mb-2">商業空間</h4>
+                    <p className="text-sm text-primary-600">辦公室、店面、展示空間設計</p>
+                  </div>
+                  <div className="bg-white p-4 rounded-xl shadow-sm">
+                    <h4 className="font-semibold text-primary-900 mb-2">套房規劃</h4>
+                    <p className="text-sm text-primary-600">包租公專案、投資型套房規劃</p>
+                  </div>
+                  <div className="bg-white p-4 rounded-xl shadow-sm">
+                    <h4 className="font-semibold text-primary-900 mb-2">3D 設計服務</h4>
+                    <p className="text-sm text-primary-600">專業渲染圖、施工前視覺化呈現</p>
+                  </div>
+                </div>
+              </div>
             </div>
 
-            <div className="grid grid-cols-2 gap-4 pt-6">
-              <div className="bg-white p-4 rounded-xl">
-                <div className="text-3xl font-bold text-accent-600 mb-1">50+</div>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-8 pt-8 border-t border-primary-200">
+              <div className="bg-white/80 p-4 rounded-xl text-center">
+                <div className="text-3xl font-bold text-accent-600 mb-1">100+</div>
                 <div className="text-sm text-primary-600">完成專案</div>
               </div>
-              <div className="bg-white p-4 rounded-xl">
-                <div className="text-3xl font-bold text-accent-600 mb-1">100+</div>
+              <div className="bg-white/80 p-4 rounded-xl text-center">
+                <div className="text-3xl font-bold text-accent-600 mb-1">200+</div>
                 <div className="text-sm text-primary-600">滿意客戶</div>
               </div>
-              <div className="bg-white p-4 rounded-xl">
-                <div className="text-3xl font-bold text-accent-600 mb-1">10+</div>
+              <div className="bg-white/80 p-4 rounded-xl text-center">
+                <div className="text-3xl font-bold text-accent-600 mb-1">15+</div>
                 <div className="text-sm text-primary-600">年經驗</div>
               </div>
-              <div className="bg-white p-4 rounded-xl">
-                <div className="text-3xl font-bold text-accent-600 mb-1">15+</div>
-                <div className="text-sm text-primary-600">獲獎作品</div>
+              <div className="bg-white/80 p-4 rounded-xl text-center">
+                <div className="text-3xl font-bold text-accent-600 mb-1">4</div>
+                <div className="text-sm text-primary-600">服務城市</div>
               </div>
             </div>
           </motion.div>
@@ -146,7 +175,7 @@ export default function About() {
           className="mb-20"
         >
           <h2 className="text-4xl font-serif font-bold text-primary-900 mb-12 text-center">
-            經歷歷程
+            公司發展歷程
           </h2>
           <div className="relative">
             <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-primary-200 hidden md:block" />
@@ -188,7 +217,7 @@ export default function About() {
           <h2 className="text-4xl font-serif font-bold text-primary-900 mb-12 text-center">
             核心價值
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {values.map((value, index) => {
               const Icon = value.icon
               return (
@@ -222,7 +251,7 @@ export default function About() {
           transition={{ duration: 0.6 }}
         >
           <h2 className="text-4xl font-serif font-bold text-primary-900 mb-12 text-center">
-            專業技能
+            專業服務能力
           </h2>
           <div className="bg-white rounded-xl p-8 shadow-md">
             <div className="space-y-6">
@@ -256,4 +285,3 @@ export default function About() {
     </div>
   )
 }
-

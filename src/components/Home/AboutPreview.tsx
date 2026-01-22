@@ -1,11 +1,12 @@
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
-import { Award, Users, Calendar, ArrowRight } from 'lucide-react'
+import { Award, Users, Calendar, ArrowRight, Building2 } from 'lucide-react'
 
 const stats = [
-  { icon: Award, value: '50+', label: '完成專案' },
-  { icon: Users, value: '100+', label: '滿意客戶' },
-  { icon: Calendar, value: '10+', label: '年經驗' },
+  { icon: Building2, value: '100+', label: '完成專案' },
+  { icon: Users, value: '200+', label: '滿意客戶' },
+  { icon: Calendar, value: '15+', label: '年經驗' },
+  { icon: Award, value: '4', label: '服務城市' },
 ]
 
 export default function AboutPreview() {
@@ -13,6 +14,7 @@ export default function AboutPreview() {
     <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          {/* 移除個人照片，改為公司形象視覺 */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -22,24 +24,18 @@ export default function AboutPreview() {
           >
             <div className="relative rounded-2xl overflow-hidden aspect-[4/3]">
               <motion.img
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800"
-                alt="Designer"
+                src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=800"
+                alt="紅圖室內設計"
                 className="w-full h-full object-cover"
                 whileHover={{ scale: 1.05 }}
                 transition={{ duration: 0.5 }}
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
+              <div className="absolute bottom-6 left-6 text-white">
+                <h3 className="text-2xl font-serif font-bold mb-2">紅圖室內設計</h3>
+                <p className="text-primary-100">專業 · 品質 · 創新</p>
+              </div>
             </div>
-            <motion.div
-              initial={{ opacity: 0, scale: 0.8 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              className="absolute -bottom-6 -right-6 bg-white p-6 rounded-xl shadow-xl"
-            >
-              <div className="text-3xl font-bold text-accent-600 mb-1">10+</div>
-              <div className="text-sm text-primary-600">年專業經驗</div>
-            </motion.div>
           </motion.div>
 
           <motion.div
@@ -49,17 +45,18 @@ export default function AboutPreview() {
             transition={{ duration: 0.8 }}
           >
             <h2 className="text-4xl md:text-5xl font-serif font-bold text-primary-900 mb-6">
-              關於設計師
+              關於紅圖
             </h2>
             <p className="text-lg text-primary-600 mb-6 leading-relaxed">
-              擁有超過十年的室內設計經驗，專注於創造既美觀又實用的生活空間。
-              每個專案都是獨一無二的創作，我們用心傾聽客戶需求，將夢想轉化為現實。
+              紅圖室內設計擁有超過十五年的專業經驗，專注於創造既美觀又實用的生活空間。
+              我們的專業團隊涵蓋設計、工程、3D 渲染等領域，為客戶提供一站式的完整服務。
             </p>
             <p className="text-lg text-primary-600 mb-8 leading-relaxed">
-              從現代簡約到經典優雅，我們擅長各種風格，致力於為每位客戶打造專屬的設計方案。
+              從住宅設計、舊屋翻新到商業空間，從套房投資規劃到 3D 設計提案，
+              我們致力於為每位客戶打造專屬的設計方案，將夢想轉化為現實。
             </p>
 
-            <div className="grid grid-cols-3 gap-6 mb-8">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
               {stats.map((stat, index) => {
                 const Icon = stat.icon
                 return (
@@ -96,4 +93,3 @@ export default function AboutPreview() {
     </section>
   )
 }
-
